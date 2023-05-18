@@ -16,7 +16,7 @@ const Login = () => {
     },
     validationSchema,
     onSubmit: (data) => {
-      AXIOS.post("/auth/login", data).catch((error) => {
+      AXIOS.post("/auth/login", data).then((res) => {
         const token =
           "EYYYYYYEYYYYYYEYYYYYYEYYYYYYEYYYYYYEYYYYYYEYYYYYYEYYYYYYEYYYYYYEYYYYYYEYYYYYYEYYYYYYEYYYYYYEYYYYYYEYYYYYYEYYYYYYEYYYYYY";
         // context api => isAuthenticated :true;
